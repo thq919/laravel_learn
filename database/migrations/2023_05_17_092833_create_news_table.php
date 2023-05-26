@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->text('slug')->nullable();
             $table->text('title')->nullable();
+            $table->boolean('published');
             $table->text('my_description')->nullable();
             $table->text('body');
             $table->dateTime('published_at');

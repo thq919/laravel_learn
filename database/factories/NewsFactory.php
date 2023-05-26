@@ -16,6 +16,7 @@ class NewsFactory extends Factory
         return [
             'slug' => fake()->slug(),
             'title' => fake()->title(),
+            'published' => fake()->boolean(),
             'my_description' => fake()->text(),
             'body' => fake()->text(),
             'published_at' => fake()->dateTimeThisMonth(),

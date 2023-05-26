@@ -9,7 +9,7 @@ class NewsController extends Controller
 {
     public function news(): View {
         $news = News::latest('published_at')
-        ->take(3)
+        ->where('published', '1')
         ->get();
         return view('tasks.news', compact('news'));
     }
